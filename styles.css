@@ -1,0 +1,160 @@
+/*
+COLOR PALETTE
+
+dict {
+	"peach fuzz": "#ffbe98",
+	"marsala": "#ad655f",
+}
+
+/* Importing different styles of Monaspace Krypton */
+@font-face {
+    font-family: 'Monaspace Krypton';
+    src: url('https://github.com/githubnext/monaspace/blob/main/fonts/webfonts/MonaspaceKrypton-Regular.woff2?raw=true') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monaspace Krypton';
+    src: url('https://github.com/githubnext/monaspace/blob/main/fonts/webfonts/MonaspaceKrypton-Bold.woff2?raw=true') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monaspace Krypton';
+    src: url('https://github.com/githubnext/monaspace/blob/main/fonts/webfonts/MonaspaceKrypton-Light.woff2?raw=true') format('woff2');
+    font-weight: 300; /* Typically 300 is used for Light */
+    font-style: normal;
+}
+
+/* Additional styles might include Italic, Semi-Bold, etc., if available */
+@font-face {
+    font-family: 'Monaspace Krypton';
+    src: url('https://github.com/githubnext/monaspace/blob/main/fonts/webfonts/MonaspaceKrypton-Italic.woff2?raw=true') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(2, 2, 2, 0.95);
+    color: rgba(222, 222, 222, 0.5);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    cursor: url('primary.cur'), auto;
+}
+
+a, button {
+	cursor: url('pointer.cur'), pointer;
+	text-decoration: none;
+}
+
+.main-container {
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+header {
+    background: rgb(0, 0, 0, 0.8);
+    color: #333;
+    padding: 20px 5%;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.1); 
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 2%;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+h2 {
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.22);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.2);
+    transition: color 0.3s, transform 0.3s;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    padding: 0.2% 1%;
+    font-size: 9pt;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.index-container {
+	padding: 2.5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-container {
+	padding: 2.5%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.glass-section {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+.glass-section:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.1)
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #666;
+}
+
+/* Content-level styles */
+p {
+	font-size: 9pt;
+}
